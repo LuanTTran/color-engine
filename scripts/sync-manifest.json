@@ -1,0 +1,15 @@
+{
+  "copy": [
+    { "from": "lib/color-engine", "to": "lib/color-engine" },
+    { "from": "lib/webgl/shaders/vertex.glsl", "to": "lib/webgl/shaders/vertex.glsl" },
+    { "from": "lib/webgl/shaders/fragment.glsl", "to": "lib/webgl/shaders/fragment.glsl" },
+    { "from": "lib/webgl/shaders/grain.glsl", "to": "lib/webgl/shaders/grain.glsl" },
+    { "from": "glsl.d.ts", "to": "glsl.d.ts" },
+    { "from": "lib/utils/curve-interpolation.ts", "to": "lib/utils/curve-interpolation.ts" }
+  ],
+  "afterSync": [
+    "Re-apply LutCacheBridge import in lib/color-engine/index.ts (Session 3 adapter)",
+    "Run npm run typecheck",
+    "Update Session log in aesthetikk/documents/implementation/color-engine-reference-repo-plan.md"
+  ]
+}
